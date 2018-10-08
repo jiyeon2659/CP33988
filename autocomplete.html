@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>New HTML5 form autocomplete Attribute and datalist Element</title>
+</head>
+<body>
+    <h1>Autocomplete and Datalist Demo</h1>
+    <p>This form demonstrates the new HTML5 autocomplete attribute and the datalist element.</p>
+
+    <!--turn autocomplete on-->
+    <form method="post" autocomplete="on">
+        <p><label>First Name: 
+            <input type="text" id="firstName" placeholder="First Name" /> (First name)
+        </label></p>
+
+        <p><label for="txtList">Birth Month:
+            <input type="text" id="txtList" placeholder="Select a month" list="months" />
+            <datalist id="months">
+                <option value="Jan">
+                <option value="Feb">
+                <option value="Mar">
+            </datalist>
+        </label></p>
+    </form>
+</body>
+</html>
