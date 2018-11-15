@@ -1,0 +1,32 @@
+img {
+    height: 150px;
+  }
+  
+  .description {
+    /* to select a class use . */
+    font-size: 20px;
+  }
+  
+  #cook-time {
+    /* syntax for ID selector : # */
+    font-weight: bold;
+  }
+  
+  .ingredients li { 
+    /* to select elements witin a parent element
+    parent-element child-element */
+    list-style: square;
+  }
+  
+  p.time {
+    /* to select tag elements with a specific class : element.class */
+    color: gray;
+  }
+  
+  .external-link {
+    color: SeaGreen;
+  }
+  
+  h1, h2, p, li {
+    font-family: Helvetica;
+  } 
