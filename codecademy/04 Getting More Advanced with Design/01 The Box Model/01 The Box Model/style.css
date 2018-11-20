@@ -1,3 +1,9 @@
+/* 
+border style: https://developer.mozilla.org/en-US/docs/Web/CSS/border-style#Values
+built-in color keyword: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+padding: space between the contents of a box and the borders of a box
+(like the space between a picture and the frame surrounding it)
+*/
 body {
     background-color: white;
     font-family: 'Raleway', sans-serif;
@@ -12,6 +18,7 @@ body {
   .navigation li {
     font-weight: 100;
     letter-spacing: 2px;
+    padding: 20px;
   }
   
   .navigation  li.logo {
@@ -22,24 +29,28 @@ body {
   }
   
   #banner {
-    height: 700px;
     background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
     background-size: cover;
     background-position: bottom center;
+    height: 700px;
     width: 100%;
   }
   
   #banner .content h1 {
-    width: 400px;
+    border: 3px solid white;
     position: relative;
     top: 50px;
+    width: 400px;
     margin: 0 auto;
   }
   
   #main {
+    margin: 0 auto;
     padding: 40px;
     text-align: center;
     width: 400px;
+    height: 1000px;
+    overflow: scroll;
   }
   
   h1 {
@@ -50,9 +61,12 @@ body {
   }
   
   h2 {
+    border: 1px dotted red;
     color: red;
     font-size: 14px;
     line-height: 48px;
+    padding: 20px 30px;
+    margin: 30px 20px;
     text-align: center;
   }
   
@@ -67,10 +81,13 @@ body {
     color: grey;
     font-size: 16px;
     line-height: 48px;
+    margin-top: 60px;
+    padding: 10px 20px;
   }
   
   .pull-quote {
-    width: 350px;
+    margin: 0 auto;
+    width: 400px;
   }
   
   .byline {
@@ -95,6 +112,8 @@ body {
     border-radius: 3px;
     color: white;
     display: inline-block;
+    margin: 10px;
+    padding: 14px;
     text-decoration: none;
   }
   
